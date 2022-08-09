@@ -49,7 +49,7 @@ jobs:
         image: your/image-to-test
         args: |
           --file=Dockerfile
-          --severity-threshold=high, critial
+          --severity-threshold="high","critial"
     - name: Upload result to GitHub Code Scanning
       uses: github/codeql-action/upload-sarif@v2
       with:
